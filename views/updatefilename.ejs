@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update file name</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="form_container">
+        <form action="/update" method="post">
+            <input style="height: 6vh; width: fit-content; padding: 4px 15px;" class="title" type="text" placeholder="previous name" name="previous" value="<%= prevname%>">
+            <input style="height: 6vh; width: fit-content; padding: 4px 15px;" class="title" type="text" placeholder="new name" name="new">
+            <input class="submit" type="submit" value="update file name">
+        </form>
+    </div>
+
+</body>
+</html>

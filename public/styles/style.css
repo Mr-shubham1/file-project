@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(27, 27, 27);
+}
+
+.form_container form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form_container form .title{
+    width: 40vw;
+    height: 8vh;
+    color: white;
+    background-color: #343434;
+}
+.form_container form .dets{
+    height: 14vh;
+    width: 40vw;
+    color: white;
+    background-color: #343434;
+}
+.form_container form .submit{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+.form_container form .submit:hover{
+    cursor: pointer;
+}
+
+
+.task_container{
+    width: 80vw;
+    height: 60vh;
+
+    margin: auto auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.task_card{
+   height: 150px;
+   width: 200px;
+   background-color: #343434;
+   display: flex;
+   align-items: center;
+   justify-content: baseline;
+   flex-direction: column;
+   border-radius: 8px;
+}
+
+.task_card a{
+    text-align: center;
+    margin-top: 15px;
+    padding: 0px 10px;
+    color: rgb(13, 116, 167);
+}

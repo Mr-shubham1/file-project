@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="form_container">
+        <form action="/create" method="post">
+            <input class="title" type="text" placeholder="enter title here" name="title">
+            <textarea style="resize: none;" class="dets" name="detail" id="" placeholder="write in detail here"></textarea>
+            <input class="submit" type="submit" value="create task">
+        </form>
+    </div>
+    <div class="task_container">
+
+
+        
+            <%files.forEach((file)=>{%>
+                <div class="task_card">
+                    
+                    <h2 style="margin-top: 10px; color: white;"><%= file %></h2>
+                    <hr style="width: 100%">
+                    <a href="/files/<%= file%>">Read more</a>
+                    <a href="/update/<%= file%>">update file name</a>
+                    <a href="/delete/<%= file%>">delete file</a>
+                </div>
+           <% })%>
+
+      
+        
+            
+       
+
+       
+
+
+        
+
+    </div>
+</body>
+</html>
